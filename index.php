@@ -18,7 +18,7 @@
 
             if(isset($_GET['buttonTrans'])){
                 $source = 'en';
-                $target = 'id';
+                $target = $_GET['langType'];
                 $text = $_GET['inputTranslate'];
 
                 $trans = new GoogleTranslate();
@@ -54,10 +54,10 @@
               <div class="mb-3 form-check">
                 <label for="langType" class="form-label">Language translate</label>
                 <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="langType">
-                  <option selected>Indonesia</option>
-                  <option value="1">Mandarin</option>
-                  <option value="2">Germany</option>
-                  <option value="3">Thailand</option>
+                  <option value="id">Indonesia</option>
+                  <option value="en">English</option>
+                  <option value="de-ch">Germany</option>
+                  <option value="th">Thailand</option>
                 </select>
               </div>
               <button type="submit" name="buttonTrans"
