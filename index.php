@@ -54,9 +54,9 @@
               <div class="mb-3 form-check">
                 <label for="langType" class="form-label">Language translate</label>
                 <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="langType">
-                  <option value="id">Indonesia</option>
-                  <option value="en">English</option>
-                  <option value="de-ch">Germany</option>
+                  <option selected value="id">Indonesia</option>
+                  <option value="zh">Mandarin</option>
+                  <option value="de">Germany</option>
                   <option value="th">Thailand</option>
                 </select>
               </div>
