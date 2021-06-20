@@ -17,7 +17,7 @@
             $result = '...';
 
             if(isset($_GET['buttonTrans'])){
-                $source = 'en';
+                $source = $_GET['langTypeInput'];
                 $target = $_GET['langType'];
                 $text = $_GET['inputTranslate'];
 
@@ -51,10 +51,24 @@
                 <label for="translatedText" class="form-label">Translated Text</label>
                 <input type="text" class="form-control" id="translatedText" name="translatedText" value="<?php echo $result ?>" disabled>
               </div>
+
               <div class="mb-3 form-check">
-                <label for="langType" class="form-label">Language translate</label>
+                <label for="langType" class="form-label">Input Language</label>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="langTypeInput">
+                  <option selected value="en">English</option>
+                  <option value="id">Indonesia</option>
+                  <option value="zh">Mandarin</option>
+                  <option value="de">Germany</option>
+                  <option value="th">Thailand</option>
+                </select>
+              </div>
+
+
+              <div class="mb-3 form-check">
+                <label for="langType" class="form-label">Output Language</label>
                 <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="langType">
                   <option selected value="id">Indonesia</option>
+                  <option value="en">English</option>
                   <option value="zh">Mandarin</option>
                   <option value="de">Germany</option>
                   <option value="th">Thailand</option>
