@@ -65,9 +65,7 @@
             </form>   
         </div>
 
-        <div class="position-absolute bottom-0 end-0">
-            <button type="button" class="btn btn-info">Help ?</button>
-        </div>
+        
 
     </body>
 </html>
