@@ -45,11 +45,11 @@
             <form name="form" action="" method="get">
               <div class="mb-3">
                 <label for="inputTranslate" class="form-label">Input Text</label>
-                <input type="text" class="form-control" id="inputTranslate" name="inputTranslate" aria-describedby="emailHelp">
+                <textarea rows=4 cols=50 class="form-control" id="inputTranslate" name="inputTranslate" aria-describedby="emailHelp"></textarea>
               </div>
               <div class="mb-3">
                 <label for="translatedText" class="form-label">Translated Text</label>
-                <input type="text" class="form-control" id="translatedText" name="translatedText" value="<?php echo $result ?>" disabled>
+                <textarea rows=4 cols=50 class="form-control" id="translatedText" name="translatedText" disabled><?php echo $result ?></textarea>
               </div>
 
               <div class="mb-3 form-check">
