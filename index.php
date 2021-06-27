@@ -16,7 +16,10 @@
             //$result = $trans->translate($source, $target, $text);
             $result = '...';
 
-			$text = $_GET['inputTranslate'];
+			if(isset($_GET['inputTranslate'])) {
+				$text = $_GET['inputTranslate'];
+			}
+			else $text = '';
             if(isset($_GET['buttonTrans']) && !($text == null || substr_count($text, ' ') === strlen($text))) {
                 $source = $_GET['langTypeInput'];
                 $target = $_GET['langType'];
